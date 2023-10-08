@@ -1,0 +1,95 @@
+/* FILEPATH: /G:/GitHub Projects/boop.website/style.css */
+
+/* Font imports */
+@font-face {
+    font-family: 'NewHiScore';
+    src: url('NewHiScore.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pixel64';
+    src: url('Pixel64_v1.2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MOOD';
+    src: url('MOOD.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pixel64', sans-serif;
+}
+
+/* Set body background color */
+body {
+    background-color: #FFF1E8;
+    color: #FF77A8;
+}
+
+/* Style header and navigation */
+header {
+    background-color: #FFCCAA;
+    color: #FF004D;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+}
+
+nav ul li {
+    flex-grow: 1;
+}
+nav ul li:first-child {
+    margin-left: 0;
+    text-align: left;
+}
+
+
+nav ul li h1 {
+    font-family: 'MOOD', 'NewHiScore', sans-serif;
+    font-size: x-small;
+    margin-top: 4px;
+    margin-bottom: -6px;
+}
+
+nav ul li a {
+    color: #FF004D;
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'NewHiScore', sans-serif;
+}
+
+nav ul li a:hover {
+    background-color: #FF77A8;
+    color: #7E2553;
+}
+
+/* Style main content */
+/* main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+} */
+
+/* Style footer */
+/* footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+} */
