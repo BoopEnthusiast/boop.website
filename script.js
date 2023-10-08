@@ -1,6 +1,6 @@
-// Wait for the DOM to finish loading before running any code
-document.addEventListener('DOMContentLoaded', function() {
+const menuIcon = document.querySelector('.menu-icon');
+const navUl = document.querySelector('nav ul');
 
-    // Your code goes here
-
+menuIcon.addEventListener('click', () => {
+    navUl.display = 'flex';
 });
