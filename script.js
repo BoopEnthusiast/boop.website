@@ -1,6 +1,8 @@
-const menuIcon = document.querySelector('.menu-icon');
-const navUl = document.querySelector('nav ul');
+document.addEventListener('DOMContentLoaded', function() {
+    const menuIcon = document.querySelector('.menu-icon');
+    const navUl = document.querySelector('nav ul');
 
-menuIcon.addEventListener('click', () => {
-    navUl.display = 'flex';
+    menuIcon.addEventListener('click', () => {
+        navUl.classList.toggle('show');
+    });
 });
