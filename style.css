@@ -92,23 +92,18 @@ nav h1 {
 }
 
 @media screen and (max-width: 768px) {
+    header {
+        position: relative;
+    }
+    
     nav ul {
-        list-style: none;
         display: none;
-        justify-content: flex-end;
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        margin-top: 50px;
-        position: absolute;
-        top: 10%;
-        right: 40%;
-        left: 40%;
     }
 
     nav ul.show {
-        display: flex;
+        display: block;
+        flex-direction: column;
+        position: static;
     }
 
     .menu-icon {
@@ -120,16 +115,32 @@ nav h1 {
 }
 
 /* Style main content */
-/* main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-} */
-
-/* Style footer */
-/* footer {
-    background-color: #333;
-    color: #fff;
+main {
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+}
+
+.background {
+    /* Set the background image */
+    background-image: url('./logo.png');
+
+    /* Center and scale the image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Set the width and height */
+    width: 100vw;
+    height: 500px; /* Adjust this to your preference */
+}
+
+.centered-text {
+    /* Center the text */
     text-align: center;
-} */
+
+    /* Set the color of the text */
+    color: white;
+}
