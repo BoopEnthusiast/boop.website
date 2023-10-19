@@ -71,24 +71,50 @@ nav ul li a {
     color: #FF004D;
     text-decoration: none;
     font-family: 'NewHiScore', sans-serif;
+    transition: background-color 0.3s ease; 
+    transition: color 0.3s ease; 
 }
 
 nav ul li a:hover {
     background-color: #FF77A8;
+    border-radius: 5px;
     color: #7E2553;
 }
 
 nav h1 {
     font-family: 'MOOD', 'NewHiScore', sans-serif;
     font-size: normal;
-    margin-top: 4px;
-    margin-bottom: -6px;
     margin-right: 10px;
+    background-color: rgba(255, 119, 168, 0);
+    transition: background-color 0.3s ease; 
+    transition: color 0.3s ease; 
+    line-height: 1.2; 
+    padding-top: 20px; 
+    padding-left: 5px;
+    padding-right: 6px;
 }
+
+nav h1:hover {
+    background-color: rgba(255, 119, 168, 255);
+    border-radius: 15px;
+    color: #7E2553;
+}
+
 
 .menu-icon {
     display: none;
     user-select: none;
+    background-color: rgba(255, 119, 168, 0);
+    transition: background-color 0.3s ease; 
+    transition: color 0.3s ease; 
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.menu-icon:hover {
+    background-color: rgba(255, 119, 168, 255);
+    border-radius: 10px;
+    color: #7E2553;
 }
 
 @media screen and (max-width: 768px) {
@@ -140,6 +166,7 @@ main {
 .centered-text {
     /* Center the text */
     text-align: center;
+    padding-top: 50%;
 
     /* Set the color of the text */
     color: white;
