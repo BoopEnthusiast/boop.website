@@ -117,7 +117,7 @@ nav h1:hover {
     color: #7E2553;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     header {
         position: relative;
     }
@@ -150,24 +150,18 @@ main {
 }
 
 .background {
-    /* Set the background image */
     background-image: url('./logo.png');
-
-    /* Center and scale the image */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    /* Set the width and height */
     width: 100vw;
-    height: 500px; /* Adjust this to your preference */
+    height: 500px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .centered-text {
-    /* Center the text */
     text-align: center;
-    padding-top: 50%;
-
-    /* Set the color of the text */
-    color: white;
+    color: #FFEC27;
 }
