@@ -35,7 +35,20 @@ document.addEventListener('DOMContentLoaded', function() {
             leftImg.src = 'images/pixel arm raising1.png';
             rightImg.src = 'images/pixel arm raising1.png';
         }
-    });
 
-    
+        var elements = document.querySelectorAll('.i-am');
+
+        elements.forEach(function(element) {
+            var position = element.getBoundingClientRect();
+
+            // checking whether fully visible
+            if(position.bottom <= window.innerHeight) {
+                element.classList.add('fade-in');
+                element.classList.remove('fade-out-fast');
+            } else {
+                element.classList.add('fade-out-fast');
+                element.classList.remove('fade-in');
+            }
+        });
+    });
 });

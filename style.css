@@ -41,6 +41,7 @@
     box-sizing: border-box;
     font-family: 'Pixel64', Calibri;
     white-space: normal;
+    text-align: center;
 }
 
 /* Set body background color */
@@ -166,6 +167,10 @@ nav h1 a:hover {
     .menu-icon {
         display: block;
     }
+
+    .mobile-spacer {
+        height: 10vh;
+    }
 }
 
 /* Style main content */
@@ -248,4 +253,26 @@ h3 {
 
 .subheading-shitty {
     margin-top: -8vw;
+}
+
+.fade-in {
+    animation: fadeIn 3s forwards;
+}
+
+.fade-out {
+    animation: fadeOut 3s forwards;
+}
+
+.fade-out-fast {
+    animation: fadeOut 0.1s forwards;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
 }
