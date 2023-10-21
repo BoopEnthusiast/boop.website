@@ -12,9 +12,11 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
         let scrollTop = window.scrollY || document.documentElement.scrollTop;
         if (scrollTop > lastScrollTop){
-            HEADER.style.top = "-100vh"; // Hide header
+            HEADER.style.top = "-10vh"; // Hide header
+            HEADER.style.transition = "top 0.5s ease-in";
         } else {
             HEADER.style.top = "0"; // Show header
+            HEADER.style.transition = "top 0.5s ease-out";
         }
         lastScrollTop = scrollTop;
     });
