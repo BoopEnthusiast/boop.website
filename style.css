@@ -32,7 +32,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Pixel64', sans-serif;
+    font-family: 'Pixel64', Calibri;
+    white-space: normal;
 }
 
 /* Set body background color */
@@ -82,7 +83,7 @@ nav ul li {
 nav ul li a {
     color: #FF004D;
     text-decoration: none;
-    font-family: 'NewHiScore', sans-serif;
+    font-family: 'NewHiScore', Calibri;
     transition: background-color 0.7s ease; 
     transition: color 0.7s ease; 
 }
@@ -94,7 +95,7 @@ nav ul li a:hover {
 }
 
 nav h1 {
-    font-family: 'MOOD', 'NewHiScore', sans-serif;
+    font-family: 'MOOD', 'NewHiScore', Calibri;
     font-size: 7vmin;
     margin-right: 10px;
     background-color: rgba(255, 119, 168, 0);
@@ -130,11 +131,7 @@ nav h1:hover {
     width: auto;
 } 
 
-@media screen and (max-width: 769px) {
-    header {
-        position: relative;
-    }
-    
+@media screen and (max-width: 769px) {    
     nav ul {
         display: none;
     }
@@ -181,9 +178,20 @@ h1 {
 }
 
 .centered-text {
-    font-family: 'MOODMkII', 'NewHiScore', sans-serif;
     text-align: center;
     color: #FF77A8;
-    font-size: 10vmin;
+}
+
+.centered-text h1 {
+    font-family: 'MOODMkII', 'NewHiScore', Calibri;
+    font-size: calc(0.1em + 3vw);
     transform: rotate(-3deg);
+}
+
+.centered-text h1:hover {
+    transition: background-color 0.7s ease; 
+    transition: color 0.7s ease; 
+    background-color: rgba(255, 119, 168, 255);
+    border-radius: 15px;
+    color: #7E2553;
 }
