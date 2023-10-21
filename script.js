@@ -19,5 +19,23 @@ document.addEventListener('DOMContentLoaded', function() {
             HEADER.style.transition = "top 0.5s ease-out";
         }
         lastScrollTop = scrollTop;
+
+        var leftImg = document.querySelector('.left-image'); 
+        var rightImg = document.querySelector('.right-image');
+        var leftRect = leftImg.getBoundingClientRect();
+        var third = window.innerHeight / 3;
+
+        if (leftRect.top < third) {
+            leftImg.src = 'images/pixel arm raising3.png';
+            rightImg.src = 'images/pixel arm raising3.png';
+        } else if (leftRect.top < 2 * third) {
+            leftImg.src = 'images/pixel arm raising2.png';
+            rightImg.src = 'images/pixel arm raising2.png';
+        } else {
+            leftImg.src = 'images/pixel arm raising1.png';
+            rightImg.src = 'images/pixel arm raising1.png';
+        }
     });
+
+    
 });
