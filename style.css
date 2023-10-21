@@ -32,7 +32,6 @@
 body {
     background-color: #FFF1E8;
     color: #FF77A8;
-    overflow: hidden;
     text-overflow: ellipsis;
 }
 
@@ -45,6 +44,9 @@ header {
     align-items: center;
     width: 100%;
     height: 10vh;
+    position: fixed;
+    top: 0;
+    z-index: 100;
 }
 
 nav {
