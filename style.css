@@ -88,15 +88,15 @@ nav ul li a:hover {
 
 nav h1 {
     font-family: 'MOOD', 'NewHiScore', sans-serif;
-    font-size: 7vh;
+    font-size: 7vmin;
     margin-right: 10px;
     background-color: rgba(255, 119, 168, 0);
     transition: background-color 0.7s ease; 
     transition: color 0.7s ease; 
-    line-height: 1.2; 
-    padding-top: 5.5vh; 
-    padding-left: 1vh;
-    padding-right: 1vh;
+    line-height: 0.4;
+    padding-top: 5.5vmin; 
+    padding-left: 1vmin;
+    padding-right: 1vmin;
 }
 
 nav h1:hover {
