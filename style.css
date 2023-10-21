@@ -1,21 +1,28 @@
 /* Font imports */
 @font-face {
     font-family: 'NewHiScore';
-    src: url('NewHiScore.ttf') format('truetype');
+    src: url('fonts/NewHiScore.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Pixel64';
-    src: url('Pixel64_v1.2.ttf') format('truetype');
+    src: url('fonts/Pixel64_v1.2.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'MOOD';
-    src: url('MOOD.ttf') format('truetype');
+    src: url('fonts/MOOD.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MOODMkII';
+    src: url('fonts/MOOD\ MKII.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -32,7 +39,7 @@
 body {
     background-color: #FFF1E8;
     color: #FF77A8;
-    text-overflow: ellipsis;
+    overflow-x: hidden;
 }
 
 /* Style header and navigation */
@@ -93,7 +100,7 @@ nav h1 {
     background-color: rgba(255, 119, 168, 0);
     transition: background-color 0.7s ease; 
     transition: color 0.7s ease; 
-    line-height: 0.4;
+    line-height: 3.5vmin;
     padding-top: 5.5vmin; 
     padding-left: 1vmin;
     padding-right: 1vmin;
@@ -163,17 +170,20 @@ h1 {
     background-image: url('./logo.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    max-width: 100vh;
+    max-width: 100vw;
     height: 100vw;
-    max-height: 100vh;
+    max-height: 70vmax;
 }
 
 .centered-text {
+    font-family: 'MOODMkII', 'NewHiScore', sans-serif;
     text-align: center;
-    color: #FFEC27;
+    color: #FF77A8;
+    font-size: 10vmin;
+    transform: rotate(-3deg);
 }
