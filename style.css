@@ -294,3 +294,9 @@ h3 {
     margin-left: -0.5vw;
     margin-right: -0.5vw;
 }
+
+.spread {
+    width: 100vw;
+    image-rendering: pixelated;
+    display: block;
+}
