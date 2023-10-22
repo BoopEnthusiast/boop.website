@@ -282,5 +282,15 @@ h3 {
 }
 
 .para {
-    font-size: 3vw;
+    font-size: 5vw;
+    margin: 0px;
+    padding: 0px;
+    line-height: 0.3;
+}
+
+.para img { 
+    width: 20vh;
+    image-rendering: pixelated;
+    margin-left: -0.5vw;
+    margin-right: -0.5vw;
 }

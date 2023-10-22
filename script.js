@@ -58,4 +58,10 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Copy my button link to clipboard
+    function copyToClipboard() {
+        var textToCopy = document.getElementById('text-to-copy').innerHTML;
+        navigator.clipboard.writeText(textToCopy)
+    }
 });
