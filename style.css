@@ -239,11 +239,11 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3vw;
+    font-size: 2.2vw;
 }
 
 .left-image, .right-image {
-    width: 20vw;
+    width: 18vw;
     image-rendering: pixelated;
 }
 
