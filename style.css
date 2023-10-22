@@ -304,3 +304,7 @@ h3 {
 .dope-af {
     font-size: 5vw;
 }
+
+.copy-image:hover {
+    cursor: pointer;
+}

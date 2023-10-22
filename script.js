@@ -62,6 +62,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Copy my button link to clipboard
 function copyToClipboard() {
-    var textToCopy = document.getElementById('text-to-copy').innerHTML;
-    navigator.clipboard.writeText(textToCopy)
+    navigator.clipboard.writeText('<a href="https://boop.website"><img src="https://boop.website/badges/boop.gif"></a>')
 }
