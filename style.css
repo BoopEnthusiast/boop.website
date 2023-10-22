@@ -255,6 +255,10 @@ h3 {
     margin-top: -8vw;
 }
 
+.i-am {
+    font-size: 3.3vw;
+}
+
 .fade-in {
     animation: fadeIn 3s forwards;
 }
