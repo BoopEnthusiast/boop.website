@@ -1,0 +1,4 @@
+This is a Brave Creators publisher verification file.
+
+Domain: boop.website
+Token: 70e9022ec6e33696b1f2ef16967853b7a75fe84cff8a6e0d971484bc1aebbecb 
