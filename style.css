@@ -53,6 +53,12 @@ body {
     flex-direction: column;
 }
 
+h1 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-all;
+}
+
 /* Style header and navigation */
 header {
     background-color: #FFCCAA;
@@ -307,4 +313,9 @@ h3 {
 
 .copy-image:hover {
     cursor: pointer;
+}
+
+.embed-container {
+    display: flex;
+    justify-content: space-between;
 }
