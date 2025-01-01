@@ -9,17 +9,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Show and hide the header when scrolling up and down
     let lastScrollTop = 0;
-    const HEADER = document.querySelector('header');
+    const HEADER = document.querySelector('.header-container');
 
     window.addEventListener('scroll', function() {
-
-        // Show and hide the header when scrolling up and down
         let scrollTop = window.scrollY || document.documentElement.scrollTop;
-        if (scrollTop > lastScrollTop){
-            HEADER.style.top = (-HEADER.offsetHeight).toString() + "px"; // Hide header
+        
+        if (scrollTop > lastScrollTop) {
+            // Hide header - move up by 20vh (total height of header + alert)
+            HEADER.style.top = "-20vh";
             HEADER.style.transition = "top 0.5s ease-in";
         } else {
-            HEADER.style.top = "0"; // Show header
+            // Show header
+            HEADER.style.top = "0";
             HEADER.style.transition = "top 0.5s ease-out";
         }
         lastScrollTop = scrollTop;
