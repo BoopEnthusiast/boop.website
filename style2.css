@@ -62,6 +62,7 @@ header {
     margin: auto;
     text-align: center;
     color: #fff;
+
 }
 
 /* Divider */
@@ -73,3 +74,8 @@ header {
 }
 
 
+/* About me box */
+#about-me {
+    width: 300px;
+    height: 180px;
+}
