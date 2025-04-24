@@ -29,9 +29,26 @@
     </head>
     <body>
         <header>
-            <h1 class="title">
+            <h1 class="title" onclick="makeMarquee(this)">
                 Boop
             </h1> 
+            <script>
+                function makeMarquee(element) {
+                    var newElement;
+                    if (element.nodeName == "H1") {
+                        newElement = document.createElement("marquee");
+                        newElement.scrollAmount = 20;
+                        newElement.width = "100%";
+                        newElement.innerHTML = "<span style='padding-right: 100%;'>Boop</span>";
+                    } else {
+                        newElement = document.createElement("h1");
+                        newElement.innerHTML = "Boop";
+                    }
+                    newElement.className = "title";
+                    newElement.onclick = function() {makeMarquee(this);};
+                    element.replaceWith(newElement);
+                }
+            </script>
         </header>
         <div class="divider"></div>
         <main>
