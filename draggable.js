@@ -1,6 +1,5 @@
 // Mostly taken from w3schools: https://www.w3schools.com/howto/howto_js_draggable.asp but written and modified by myself
 
-// There should be an equal amount of pickupable elements and pickupable element spacers
 dragElement(document.getElementsByClassName("pickupable-centered"), document.getElementsByClassName("pickupable-spacer"));
 
 function dragElement(pickupableElements, pickupableSpacerElements) {
@@ -9,6 +8,7 @@ function dragElement(pickupableElements, pickupableSpacerElements) {
         let element = pickupableElements[i];
         let elementSpacer = pickupableSpacerElements[i];
 
+        // For spacers that don't have an index and therefor apply to the beginning ones (before the cards)
         if (elementSpacer) {
             if (elementSpacer.getAttribute("data-index") == null) {
                 // Set element spacer's height equal to element's

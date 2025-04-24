@@ -22,16 +22,18 @@
 
         <meta name="description" content="Personal website for the illustrious Boop"/>
 
-        <!-- Meow script google fonts -->
+        <!-- Meow Script/Sour Gummy google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
+        <!-- Title -->
         <header>
             <h1 class="title" onclick="makeMarquee(this)">
                 Boop
-            </h1> 
+            </h1>
+            <!-- Makes the title into a marquee if clcked -->
             <script>
                 function makeMarquee(element) {
                     var newElement;
@@ -50,8 +52,11 @@
                 }
             </script>
         </header>
+        <!-- Divider -->
         <div class="divider"></div>
+        <!-- Main -->
         <main>
+            <!-- About me -->
             <div class="pickupable-centered">
                 <div class="bordered-box" id="about-me">
                     <div class="bordered-box-fill" id="about-me-fill"></div>
@@ -66,6 +71,7 @@
                 </div>
             </div>
             <div class="pickupable-spacer"></div>
+            <!-- Website list -->
             <div class="pickupable-centered">
                 <div class="bordered-box" id="websites-list">
                     <div class="bordered-box-fill"></div>
@@ -82,11 +88,13 @@
                 </div>
             </div>
             <div class="pickupable-spacer"></div>
+            <!-- Things I do and their cards -->
             <div class="bordered-box" id="things-i-do">
                 <div class="bordered-box-fill"></div>
                 <h3 style="text-align: center;">
                     Things I do:
                 </h3>
+                <!-- Cards -->
                 <div class="pickupable-centered card">
                     <h4>VR</h4>
                     <img class="card-image" src="images/CardVR.jpg" alt="Picture of my Valve Index (VR headset & controllers)">
@@ -141,6 +149,7 @@
                     I'm down to do commissions~
                 </p>
             </div>
+            <!-- Things I like -->
             <div class="pickupable-centered">
                 <div class="bordered-box" id="things-i-like">
                     <div class="bordered-box-fill"></div>
@@ -160,6 +169,7 @@
                 </div>
             </div>
             <div class="pickupable-spacer" data-index="14"></div>
+            <!-- Socials -->
             <div class="pickupable-centered">
                 <div class="bordered-box" id="socials">
                     <div class="bordered-box-fill"></div>
