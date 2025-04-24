@@ -5,7 +5,7 @@ function dragElement(elements) {
     for (let element of elements) {
         console.log(element);
 
-        let movedPositionX = 0, movedPositionY = 0, originPositionX = 0, originPositionY = 0;
+        var movedPositionX = 0, movedPositionY = 0, originPositionX = 0, originPositionY = 0;
 
         element.onmousedown = dragMouseDown;
 
@@ -30,6 +30,15 @@ function dragElement(elements) {
 
             element.style.left = (element.offsetLeft - movedPositionX) + "px";
             element.style.top = (element.offsetTop - movedPositionY) + "px";
+            const rect = element.getBoundingClientRect();
+            const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+            console.log(rect);
+            console.log(vw);
+            if (rect.right + 500 > vw) {
+                element.style.right = (rect.right - vw - 110) + "px";
+            } else {
+                element.style.right = "";
+            }
         }
 
         function closeDragElement() {
