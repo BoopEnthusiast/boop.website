@@ -8,6 +8,7 @@
 body {
     margin: 0;
     background-color: #FEE4EE;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* Re-usable elements */
@@ -63,6 +64,7 @@ header {
     text-align: center;
     color: #fff;
 
+    text-shadow: 0 0 30px #fff;
 }
 
 /* Divider */
@@ -71,11 +73,21 @@ header {
     height: 40px;
     background: url(./Ribbon.png);
     margin-top: -10px;
+
+    filter: drop-shadow(0px 10px 20px #fff);
 }
 
 
 /* About me box */
 #about-me {
-    width: 300px;
-    height: 180px;
+    width: fit-content;
+    height: fit-content;
+    padding: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
+
+#about-me-fill {
+    filter: drop-shadow(0px 0px 20px #fff);
+}
+
