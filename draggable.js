@@ -67,15 +67,6 @@ function dragElement(pickupableElements, pickupableSpacerElements) {
             // Update left and top style
             element.style.left = (element.offsetLeft - movedPositionX) + "px";
             element.style.top = (element.offsetTop - movedPositionY) + "px";
-
-            // Fix sizing on the edge of the screen
-            const rect = element.getBoundingClientRect();
-            const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-            if (rect.right + 500 > vw) {
-                element.style.right = (rect.right - vw - 110) + "px";
-            } else {
-                element.style.right = "";
-            }
         }
 
         // When element is dragged after being touched
@@ -94,14 +85,7 @@ function dragElement(pickupableElements, pickupableSpacerElements) {
             element.style.left = (element.offsetLeft - movedPositionX) + "px";
             element.style.top = (element.offsetTop - movedPositionY) + "px";
 
-            // Fix sizing on the edge of the screen
-            const rect = element.getBoundingClientRect();
-            const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-            if (rect.right + 500 > vw) {
-                element.style.right = (rect.right - vw - 110) + "px";
-            } else {
-                element.style.right = "";
-            }
+            // Don't fix sizing
         }
 
         // Stop dragging
