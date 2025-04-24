@@ -21,8 +21,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
+    font-variation-settings: "wdth" 100;
 }
 
 /* Re-usable elements */
@@ -104,7 +103,7 @@ header {
 
 /* About me box */
 #about-me {
-    width: auto;
+    width: 240px;
     height: auto;
     padding: 30px;
     padding-top: 15px;
