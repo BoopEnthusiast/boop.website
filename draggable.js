@@ -32,8 +32,6 @@ function dragElement(elements) {
             element.style.top = (element.offsetTop - movedPositionY) + "px";
             const rect = element.getBoundingClientRect();
             const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-            console.log(rect);
-            console.log(vw);
             if (rect.right + 500 > vw) {
                 element.style.right = (rect.right - vw - 110) + "px";
             } else {
