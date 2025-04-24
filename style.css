@@ -45,11 +45,11 @@ body {
 
 /* Pickupable */
 .pickupable-centered {
+    width: fit-content;
+    height: fit-content;
     position: absolute;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 /* Individual pieces */
