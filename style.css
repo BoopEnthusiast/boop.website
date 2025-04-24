@@ -130,6 +130,7 @@ header {
 .card {
     background-color: #FBB2C5;
     border-radius: 30px;
+    width: auto;
 }
 
 .card h4 {
