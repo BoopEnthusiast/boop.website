@@ -10,9 +10,22 @@ function dragElement(pickupableElements, pickupableSpacerElements) {
         let elementSpacer = pickupableSpacerElements[i];
 
         if (elementSpacer) {
-            // Set element spacer's height equal to element's
-            const rect = element.getBoundingClientRect();
-            elementSpacer.style.height = rect.height + "px";
+            if (elementSpacer.getAttribute("data-index") == null) {
+                // Set element spacer's height equal to element's
+                const rect = element.getBoundingClientRect();
+                elementSpacer.style.height = rect.height + "px";
+            }
+        }
+
+        // Check if spacers have this index
+        for (let o = 0; o < pickupableSpacerElements.length; o++) {
+            elementSpacer = pickupableSpacerElements[o];
+            if (elementSpacer.getAttribute("data-index") == i) {
+                // Set element spacer's height equal to element's
+                const rect = element.getBoundingClientRect();
+                elementSpacer.style.height = rect.height + "px";
+                break;
+            }
         }
 
         // Setup variables

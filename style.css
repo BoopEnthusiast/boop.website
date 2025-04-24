@@ -24,6 +24,11 @@ body {
     font-variation-settings: "wdth" 100;
 }
 
+h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
 /* Re-usable elements */
 /* Bordered box */
 .bordered-box {
@@ -121,10 +126,10 @@ header {
     text-align: left;
 }
 
-/* Things I do cards */
+/* Things I do / cards */
 #things-i-do {
     width: 350px;
-    height: 350px;
+    height: 310px;
 }
 
 .card {
@@ -143,4 +148,14 @@ header {
     display: block;
     border-radius: 30px;
     width: 300px;
+}
+
+/* Things I like */
+#things-i-like {
+    height: 215px;
+}
+
+/* Socials */
+#socials {
+    height: 380px;
 }
