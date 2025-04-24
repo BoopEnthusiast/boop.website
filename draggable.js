@@ -9,9 +9,11 @@ function dragElement(pickupableElements, pickupableSpacerElements) {
         let element = pickupableElements[i];
         let elementSpacer = pickupableSpacerElements[i];
 
-        // Set element spacer's height equal to element's
-        const rect = element.getBoundingClientRect();
-        elementSpacer.style.height = rect.height + "px";
+        if (elementSpacer) {
+            // Set element spacer's height equal to element's
+            const rect = element.getBoundingClientRect();
+            elementSpacer.style.height = rect.height + "px";
+        }
 
         // Setup variables
         var movedPositionX = 0, movedPositionY = 0, originPositionX = 0, originPositionY = 0;
