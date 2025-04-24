@@ -60,8 +60,8 @@ body {
 
 /* Pickupable */
 .pickupable-centered {
-    width: fit-content;
-    height: fit-content;
+    width: auto;
+    height: auto;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
@@ -103,8 +103,8 @@ header {
 
 /* About me box */
 #about-me {
-    width: fit-content;
-    height: fit-content;
+    width: auto;
+    height: auto;
     padding: 30px;
     padding-top: 15px;
     padding-bottom: 20px;
