@@ -43,6 +43,15 @@ body {
     z-index: -1;
 }
 
+/* Pickupable */
+.pickupable-centered {
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
 /* Individual pieces */
 /* Header */
 header {
